@@ -1,0 +1,32 @@
+{
+  "name": "Rando-recognition",
+  "version": "0.0.1",
+  "description": "Project for recognition nude content, black or boring photos and so on",
+  "main": "./lib/randoRecognition",
+  "engine": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RandoApp/Rando-recognition.git"
+  },
+  "dependencies": {
+    "async": "2.0.1",
+    "histogram": "2.1.1",
+    "node-tensorflow": "^0.5.0",
+    "nude": "0.0.1",
+    "opencv": "^6.0.0",
+    "winston": "2.2.0"
+  },
+  "devDependencies": {
+    "mocha": "2.5.3",
+    "should": "9.0.2",
+    "sinon": "1.17.4",
+    "istanbul": "0.4.4",
+    "coveralls": "2.11.9"
+  },
+  "scripts": {
+    "test": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- --recursive",
+    "coveralls": "node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  }
+}
