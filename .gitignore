@@ -1,0 +1,5 @@
+test/assets
+*.zip
+report.html
+coverage
+node_modules
