@@ -1,5 +1,5 @@
 {
-  "name": "Rando-recognition",
+  "name": "randoRecognition",
   "version": "0.0.1",
   "description": "Project for recognition nude content, black or boring photos and so on",
   "main": "./lib/randoRecognition",
