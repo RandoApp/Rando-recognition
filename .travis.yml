@@ -9,5 +9,6 @@ git:
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq libopencv-dev
+  - npm install node-pre-gyp -g
 after_script:
   - npm run-script coveralls
